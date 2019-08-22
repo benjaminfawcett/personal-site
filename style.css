@@ -1,0 +1,229 @@
+body, html {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+	color: white;
+}
+
+.vertical-center {
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+body {
+	background: #E84329;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #FF715B, #E84329);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #FF715B, #E84329); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: 'Titillium Web', sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+h1 {
+	font-size: 4rem;
+}
+
+#aligner {
+	align: center;
+
+}
+.portfolio-img {
+
+	margin-bottom: 5px;
+	padding: 10%;
+
+	/*-webkit-box-shadow: 0px 7px 10px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 7px 10px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 7px 10px -1px rgba(0,0,0,0.75);*/
+
+}
+
+#documents {
+	background-color: #E84329;
+	padding-bottom: 50px;
+}
+
+#portfolio {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #FFF4F3;
+	width: 65%;
+	outline-color: #373B44;
+	outline-style: solid;
+	opacity: 100%;
+	z-index: 3;
+}
+
+
+
+
+#resume {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #FFF4F3;
+	width: 65%;
+	outline-color: #373B44;
+	outline-style: solid;
+	font-family: 'Montserrat', sans-serif;
+	color: #373B44;
+	opacity: 0;
+	z-index: 2;
+}
+
+#subresume {
+	padding-top: 25px;
+	width: 90%;
+}
+
+#smalltext {
+	font-size: 14px;
+	padding-left: 2%;
+}
+
+#contact {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #FFF4F3;
+	width: 65%;
+	outline-color: #373B44;
+	outline-style: solid;
+	opacity: 0;
+	z-index: 1;
+}
+
+h4 {
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+#prof {
+	width: 250px;
+	border-radius: 100%;
+/*	border: 3px solid #00b6f1;
+*/}
+
+.green-bold {
+	font-weight: 700;
+	color: #E84329;
+}
+
+.grey-bold {
+	font-weight: 700;
+	color: #f3f3f5;
+}
+
+.btn-primary {
+	background-color: #373B44;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	width: 200px;
+	border-radius: 0;
+	border: 1px solid white;
+	margin: 0 10px 10px 10px;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:target,
+.btn-primary:active:focus {
+	background-color: white;
+	border-color: white;
+	color: #E84329;
+	box-shadow: none;
+}
+
+.btn-secondary {
+	background-color: #373B44;
+	background-color: rgba(0,0,0,0);
+	color: #373B44;
+	width: 200px;
+	border-radius: 0;
+	border: 1px solid #373B44;
+	margin: 0 10px 10px 10px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:target,
+.btn-secondary:active:focus {
+	background-color: white;
+	border-color: white;
+	color: black;
+	box-shadow: none;
+}
+
+.btn-primary:focus {
+	box-shadow: none;
+}
+
+#button-row {
+	margin-top: 30px;
+}
+
+.modal-info {
+	margin-top: -5px;
+}
+
+.modal-icon {
+	color: #E84329;
+}
+
+#contactModal {
+	color: black;
+}
+
+@media screen and (max-width: 1200px) {
+	.small-center {
+		text-align: center;
+	}
+}
+
+.transform {
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+#slide1_container {
+	width:450px;
+	height:281px;
+	overflow:hidden; /* So the sliding bit doesn't stick out. */
+	margin:0 auto;
+}
+#slide1_images {
+	/* This is the bit that moves. It has 4 images, so 4 * 450 = 1800. You could use javascript
+    to work this out instead by counting images. */
+	width:1800px;
+
+	-webkit-transition:all 1.0s ease-in-out;
+	-moz-transition:all 1.0s ease-in-out;
+	-o-transition:all 1.0s ease-in-out;
+	transition:all 1.0s ease-in-out;
+}
+#slide1_images img {
+	padding:0;
+	margin:0;
+	float:left; /* All the images are in a row next to each other. */
+}
