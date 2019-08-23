@@ -54,6 +54,8 @@ h1 {
 
 #documents {
 	background-color: #E84329;
+    left: 0;
+    right: 0;
 	padding-bottom: 50px;
 }
 
@@ -86,6 +88,7 @@ h1 {
 	color: #373B44;
 	opacity: 0;
 	z-index: 2;
+    margin-bottom: 40px;
 }
 
 #subresume {
@@ -178,6 +181,23 @@ h4 {
 
 #button-row {
 	margin-top: 30px;
+    padding-top: 20px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.sticky {
+    background-color: #E84329;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.sticky + .content {
+    padding-top: 60px;
 }
 
 .modal-info {

@@ -1,5 +1,8 @@
 $('#portfolioButton').on('click', function(event) {
     event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top -85
+    }, 750);
     $('#portfolio').animate({
         transform: "scale(1.1)", opacity: 1
     }, 1200);
@@ -27,6 +30,9 @@ $('#portfolioButton').on('click', function(event) {
 
 $('#resumeButton').on('click', function(event) {
     event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top -85
+    }, 750);
     $('#portfolio').animate({
         transform: "scale(1.1)", opacity: 1
     }, 1200);
@@ -54,6 +60,9 @@ $('#resumeButton').on('click', function(event) {
 
 $('#contactButton').on('click', function(event) {
     event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top -85
+    }, 750);
     $('#portfolio').animate({
         opacity: 1
     }, 1200);
@@ -78,6 +87,23 @@ $('#contactButton').on('click', function(event) {
         left: 0, right: 0, opacity: 0
     }, 1200);
 });
+
+window.onscroll = function() {floaty()};
+
+// Get the navbar
+var navbar = document.getElementById("button-row");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function floaty() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
 
 
 // $('#portfolioButton').on('click', function(e) {
