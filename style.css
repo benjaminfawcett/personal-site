@@ -72,9 +72,26 @@ h1 {
 	z-index: 3;
 }
 
+.typed-cursor {
+	opacity: 1;
+	animation: blink .7s infinite;
+}
 
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
-
+#title {
+	font-size: 12px;
+}
 #resume {
 	position: absolute;
 	left: 0;
