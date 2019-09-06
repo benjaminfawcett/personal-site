@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7beed91-9703-4758-b06e-9336149c728f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/abt-portfolio-txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/abt-portfolio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adambowker-resume_050219.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adboio-test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adboio.js" beforeDir="false" afterPath="$PROJECT_DIR$/adboio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adt-portfolio-txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fn-portfolio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fn-portfolio2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heller-port-new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hlg-portfolio-txt.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1082">
-              <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="579">
+              <caret line="197" column="79" selection-start-line="197" selection-start-column="79" selection-end-line="197" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -97,8 +79,8 @@
         <option value="$PROJECT_DIR$/index 2.html" />
         <option value="$PROJECT_DIR$/CNAME" />
         <option value="$PROJECT_DIR$/adboio.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -165,12 +147,12 @@
       <option name="presentableId" value="Default" />
       <updated>1566498910951</updated>
       <workItem from="1566498917163" duration="13241000" />
-      <workItem from="1566575175341" duration="2256000" />
+      <workItem from="1566575175341" duration="3021000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15497000" />
+    <option name="totallyTimeSpent" value="16262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -298,8 +280,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1082">
-          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        <state relative-caret-position="579">
+          <caret line="197" column="79" selection-start-line="197" selection-start-column="79" selection-end-line="197" selection-end-column="79" />
         </state>
       </provider>
     </entry>
