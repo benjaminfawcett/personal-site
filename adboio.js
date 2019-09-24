@@ -1,92 +1,135 @@
+var clicked = 0;
+
 $('#portfolioButton').on('click', function(event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top -85
     }, 750);
-    $('#portfolio').animate({
+    var z_Index = document.getElementById('portfolio').style.zIndex;
+    if (z_Index != 3 && clicked !=0) {
+        $('#portfolio').css('display', 'block');
+        $('#contact').css('display', 'block');
+        $('#resume').css('display', 'block');
+        $('#portfolio').animate({
         transform: "scale(1.1)", opacity: 1
-    }, 1200);
-    $('#portfolio').css('z-index', 3);
-    $('#portfolio').animate({
-        transform: "scale(1)", opacity: 1
-    }, 1200);
+        }, 1200);
+        $('#portfolio').css('z-index', 3);
+        $('#portfolio').animate({
+            transform: "scale(1)", opacity: 1
+        }, 1200);
 
-    $('#contact').animate({
-        right: -50 + "%", left: 85 + "%", opacity: 1
-    }, 1200);
-    $('#contact').css('z-index', 2);
-    $('#contact').animate({
-        left: 0, right: 0, opacity: 0
-    }, 1200);
+        $('#contact').animate({
+            right: -50 + "%", left: 85 + "%", opacity: 1
+        }, 1200);
+        $('#contact').css('z-index', 2);
+        $('#contact').animate({
+            left: 0, right: 0, opacity: 0
+        }, 1200);
 
-    $('#resume').animate({
-        left: -50 + "%", right: 100 + "%", opacity: 1
-    }, 1200);
-    $('#resume').css('z-index', 1);
-    $('#resume').animate({
-        left: 0, right: 0, opacity: 0
-    }, 1200);
-});
-
-$('#resumeButton').on('click', function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top -85
-    }, 750);
-    $('#portfolio').animate({
-        transform: "scale(1.1)", opacity: 1
-    }, 1200);
-    $('#portfolio').css('z-index', 2);
-    $('#portfolio').animate({
-        transform: "scale(1)", opacity: 0
-    }, 1200);
-
-    $('#contact').animate({
-        right: -50 + "%", left: 85 + "%", opacity: 1
-    }, 1200);
-    $('#contact').css('z-index', 1);
-    $('#contact').animate({
-        left: 0, right: 0, opacity: 0
-    }, 1200);
-
-    $('#resume').animate({
-        left: -50 + "%", right: 100 + "%", opacity: 1
-    }, 1200);
-    $('#resume').css('z-index', 3);
-    $('#resume').animate({
-        left: 0, right: 0, opacity: 1
-    }, 1200);
+        $('#resume').animate({
+            left: -50 + "%", right: 100 + "%", opacity: 1
+        }, 1200);
+        $('#resume').css('z-index', 1);
+        $('#resume').animate({
+            left: 0, right: 0, opacity: 0
+        }, 1200);
+    }
 });
 
 $('#contactButton').on('click', function(event) {
+    clicked = 1;
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top -85
     }, 750);
-    $('#portfolio').animate({
-        opacity: 1
-    }, 1200);
-    $('#portfolio').css('z-index', 1);
-    $('#portfolio').animate({
-        transform: "scale(1)", opacity: 0
-    }, 1200);
 
-    $('#contact').animate({
-        right: -50 + "%", left: 85 + "%", opacity: 1
-    }, 1200);
-    $('#contact').css('z-index', 3);
-    $('#contact').animate({
-        left: 0, right: 0, opacity: 1
-    }, 1200);
+    var z_Index = document.getElementById('contact').style.zIndex;
+    if (z_Index != 3 && clicked !=0) {
+        $('#portfolio').css('display', 'block');
+        $('#contact').css('display', 'block');
+        $('#resume').css('display', 'block');
+        $('#portfolio').animate({
+            opacity: 1
+        }, 1200);
+        $('#portfolio').css('z-index', 1);
+        $('#portfolio').animate({
+            transform: "scale(1)", opacity: 0
+        }, 1200);
 
-    $('#resume').animate({
-        left: -50 + "%", right: 100 + "%", opacity: 1
-    }, 1200);
-    $('#resume').css('z-index', 2);
-    $('#resume').animate({
-        left: 0, right: 0, opacity: 0
-    }, 1200);
+        $('#contact').animate({
+            right: -50 + "%", left: 85 + "%", opacity: 1
+        }, 1200);
+        $('#contact').css('z-index', 3);
+        $('#contact').animate({
+            left: 0, right: 0, opacity: 1
+        }, 1200);
+
+        $('#resume').animate({
+            left: -50 + "%", right: 100 + "%", opacity: 1
+        }, 1200);
+        $('#resume').css('z-index', 2);
+        $('#resume').animate({
+            left: 0, right: 0, opacity: 0
+        }, 1200);
+    }
 });
+
+$('#resumeButton').on('click', function(event) {
+    clicked = 1;
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top -85
+    }, 750);
+
+    var z_Index = document.getElementById('resume').style.zIndex;
+    if (z_Index != 3 && clicked !=0) {
+        $('#portfolio').css('display', 'block');
+        $('#contact').css('display', 'block');
+        $('#resume').css('display', 'block');
+        $('#portfolio').animate({
+            transform: "scale(1.1)", opacity: 1
+        }, 1200);
+        $('#portfolio').css('z-index', 2);
+        $('#portfolio').animate({
+            transform: "scale(1)", opacity: 0
+        }, 1200);
+
+        $('#contact').animate({
+            right: -50 + "%", left: 85 + "%", opacity: 1
+        }, 1200);
+        $('#contact').css('z-index', 1);
+        $('#contact').animate({
+            left: 0, right: 0, opacity: 0
+        }, 1200);
+        $('#resume').animate({
+            left: -50 + "%", right: 100 + "%", opacity: 1
+        }, 1200);
+        $('#resume').css('z-index', 3);
+        $('#resume').animate({
+            left: 0, right: 0, opacity: 1
+        }, 1200);
+    }
+});
+
+
+
+function scrollFix(x) {
+    if (x == 1) {
+        $('#portfolio').css('display', 'block');
+        $('#contact').css('display', 'none');
+        $('#resume').css('display', 'none');
+    }
+    if (x == 2) {
+        $('#portfolio').css('display', 'none');
+        $('#contact').css('display', 'block');
+        $('#resume').css('display', 'none');
+    }
+    if (x == 3) {
+        $('#portfolio').css('display', 'none');
+        $('#contact').css('display', 'none');
+        $('#resume').css('display', 'block');
+    }
+}
 
 window.onscroll = function() {floaty()};
 
@@ -105,6 +148,11 @@ function floaty() {
     }
 }
 
+window.getZIndex = function (e) {
+    var z = document.defaultView.getComputedStyle(e).getPropertyValue('z-index');
+    if (isNaN(z)) return getZIndex(e.parentNode);
+    else return z;
+};
 
 particlesJS("particles-js", {
     "particles": {
