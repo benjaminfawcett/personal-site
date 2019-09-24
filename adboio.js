@@ -32,7 +32,9 @@ $('#portfolioButton').on('click', function(event) {
         $('#resume').css('z-index', 1);
         $('#resume').animate({
             left: 0, right: 0, opacity: 0
-        }, 1200);
+        }, 1200, function() {
+            scrollFix(1);
+        });
     }
 });
 
@@ -70,7 +72,9 @@ $('#contactButton').on('click', function(event) {
         $('#resume').css('z-index', 2);
         $('#resume').animate({
             left: 0, right: 0, opacity: 0
-        }, 1200);
+        }, 1200, function() {
+            scrollFix(2);
+        });
     }
 });
 
@@ -107,7 +111,9 @@ $('#resumeButton').on('click', function(event) {
         $('#resume').css('z-index', 3);
         $('#resume').animate({
             left: 0, right: 0, opacity: 1
-        }, 1200);
+        }, 1200, function() {
+            scrollFix(3);
+        });
     }
 });
 
