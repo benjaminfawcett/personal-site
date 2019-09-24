@@ -74,7 +74,7 @@ h1 {
 
 .typed-cursor {
 	opacity: 1;
-	animation: blink .7s infinite;
+	animation: blink 1.0s infinite;
 }
 
 @keyframes blink {
